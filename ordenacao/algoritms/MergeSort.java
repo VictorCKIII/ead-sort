@@ -6,7 +6,7 @@ public class MergeSort implements Sorter {
 
     @Override
     public int[] sort(int[] elements) {
-        int[] aux =new int[elements.length];
+        int[] aux = new int[elements.length];
 
         MergeSort(elements, aux, 0, elements.length -1);
         

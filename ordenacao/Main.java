@@ -16,37 +16,41 @@ public class Main {
         NumberSet ns10 = new NumberSet (10);
         NumberSet ns100 = new NumberSet (100);
         NumberSet ns1000 = new NumberSet (1000);
-       // NumberSet ns10000 = new NumberSet (10000);
+        NumberSet ns10000 = new NumberSet (10000);
         try (FileWriter myWriter = new FileWriter("resultado.txt")) {
           myWriter.write("==============="+ System.lineSeparator());
             runSet(new BubbleSort(),ns10, myWriter);
             runSet(new BubbleSort(),ns100, myWriter);
             runSet(new BubbleSort(),ns1000, myWriter);
-          //  runSet(new BubbleSort(),ns10000, myWriter);
+            runSet(new BubbleSort(),ns10000, myWriter);
             System.gc();
 
             myWriter.write("==============="+ System.lineSeparator());
             runSet(new SelectionSort(),ns10, myWriter);
             runSet(new SelectionSort(),ns100, myWriter);
             runSet(new SelectionSort(),ns1000, myWriter);
+            runSet(new SelectionSort(), ns10000, myWriter);
             System. gc();
 
             myWriter.write("==============="+ System.lineSeparator());
             runSet(new InsertionSort(),ns10, myWriter);
             runSet(new InsertionSort(),ns100, myWriter);
             runSet(new InsertionSort(),ns1000, myWriter);
+            runSet(new InsertionSort(),ns10000, myWriter);
             System.gc();
 
             myWriter.write("==============="+ System.lineSeparator());
             runSet(new MergeSort(),ns10, myWriter);
             runSet(new MergeSort(),ns100, myWriter);
             runSet(new MergeSort(),ns1000, myWriter);
+            runSet(new MergeSort(),ns10000, myWriter);
             System.gc();
 
             myWriter.write("==============="+ System.lineSeparator());
             runSet(new QuickSort(),ns10, myWriter);
             runSet(new QuickSort(),ns100, myWriter);
             runSet(new QuickSort(),ns1000, myWriter);
+            runSet(new QuickSort(),ns10000, myWriter);
             System.gc();
             myWriter.close();
             System.out.println("FIM");
