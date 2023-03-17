@@ -37,4 +37,6 @@ public class SelectionSort implements Sorter{
     public String getName() {
         return "SelectionSort";
     }
+
+    
 }
